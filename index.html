@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register Brunel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form_box">
+            <div class="btn_box">
+                <div id="btn"></div>
+                <button type="button" class="toggle_btn" onclick="login()">Log in</button>
+                <button type="button" class="toggle_btn" onclick="registerA()">Register</button>
+            </div>
+            <form id="login" class="input_group">
+                <div class="form_div">
+                    <input type="text" name="LoginName" class="form_input" placeholder=" " required>
+                    <label for="" class="form_label">User Name</label>
+                </div>
+                <div class="form_div">
+                    <input type="password" name="LoginPassword" class="form_input" placeholder=" " required>
+                    <label for="" class="form_label">Password</label>
+                </div>
+                <input type="checkbox" class="checkboxLogin"><span>Clean the input</span>
+                <button type="submit" class="submit_btn">Log in</button>
+            </form>
+
+
+            <form id="register" class="input_group">
+                <div class="form_div">
+                    <input type="text" name="RegistName" class="form_input" placeholder=" " required>
+                    <label for="" class="form_label">User Name</label>
+                </div>
+                <div class="form_div">
+                    <input type="email" name="RegistEmail" class="form_input" placeholder=" " required>
+                    <label for="" class="form_label">Email</label>
+                </div>
+                <div class="form_div">
+                    <input type="password" name="RegistPassword" id="password" class="form_input" placeholder=" " required>
+                    <label for="" class="form_label">Password</label>
+                </div>
+                <div class="form_div">
+                    <input type="password" name="RegistPasswordConfir" id="passwordConfirm" class="form_input" placeholder=" " required>
+                    <label for="" class="form_label">Password confirmed</label>
+                </div>
+                <input type="checkbox" class="checkboxRegister"><span>Clean the input</span>
+                <button type="submit" class="submit_btn">Register</button>
+            </form>
+            
+
+            <div id="registeredData" class="hidden">
+                <!-- Registered data will be displayed here (Eto no miafiche izy e)-->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
